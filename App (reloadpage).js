@@ -70,12 +70,12 @@ export default class App extends Component {
                   onChangeText={text => this.setState({text})}
               />
             <View style={{flexDirection: "row"}}>
-              <View style={styles.container}> 
+              <View style={styles.button}> 
                 <Button style={styles.button} onPress={() => {this.debitReload()}}
                   title='pay via Debit Card' 
                 />
               </View> 
-              <View style={styles.container}> 
+              <View style={styles.button}> 
                 <Button style={styles.button} onPress={() => {this.creditcardReload()}}
                   title="Pay via Credit Card" 
                 />    
@@ -114,6 +114,7 @@ const styles = StyleSheet.create({
 
   height: 40, 
   width: 300,
+  textAlign: 'center',
   borderColor: 'black', 
   borderWidth: 0.5 ,
   marginBottom: 20
@@ -121,10 +122,10 @@ const styles = StyleSheet.create({
 
  button: {
 
-  height: 40, 
-  width: '90',
-  marginTop: 10,
-  padding: 15
+  height: 10, 
+  width: 200,
+  marginTop: -10,
+  padding: 2
  
  }
 })
