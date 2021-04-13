@@ -1,6 +1,6 @@
 //Izzat Izzqy bin Jasme
 //1722563
-//class activity word analyzer
+//case study number 5
 
 import { StatusBar } from 'expo-status-bar';
 import React, { Component, useState } from 'react';
@@ -12,34 +12,38 @@ export default class App extends Component {
     constructor() {  
         super();  
         this.state = {
+          balance:0
         };  
     }  
 
-    debitReload(){
+    debitReload()
+    {
 
-      let amount=this.state.text;
-
-      let balance = 0;
-      var total_after_debit = (amount + balance);
-
+      var amount=parseInt(this.state.text);
+      var bal=parseInt(this.state.balance);
+      var total_after_debit = (amount + bal);
       this.setState({
 
-          balance: total_after_debit
+        balance: total_after_debit
 
-          });
+        });
+
+      alert('Your Debit Card is charged and you are good to go!');
     }
 
-    creditcardReload(){
+    creditcardReload()
+    {
 
-      let amount=this.state.text;
-      let balance = 0;
-      var total_after_credit = (amount + balance + 0.5); //cashback 50 cents
+      var amount=parseInt(this.state.text);
+      var bal=parseInt(this.state.balance);
+      var total_after_credit = amount + bal + 0.5; //cashback 50 cents
 
       this.setState({
 
           balance: total_after_credit
 
           });
+      alert('Your Debit Card is charged and you are good to go! \n Congratulation, you just got cashback value of RM0.50!');
     }
 
 
@@ -50,32 +54,35 @@ export default class App extends Component {
         return (  
           
 
-            <View style={styles.container}>  
+  <View style={styles.container}>  
 
              <Text style={styles.header}>Reload Your Balance! {""} </Text>
 
-
+             <Text
+             value={this.state.balance}
+             >{"\n"}Current balance: RM {this.state.balance}</Text>
              <TextInput
                   style={styles.textinput}
+                  numeric value
                   value={this.state.text}
                   keyboardType= 'numeric'
                   placeholder="Enter amount: "  
-                  onChangeText={text => this.setState({ text })}
-                />
-
+                  onChangeText={text => this.setState({text})}
+              />
+            <View style={{flexDirection: "row"}}>
+              <View style={styles.container}> 
                 <Button style={styles.button} onPress={() => {this.debitReload()}}
-                  title="Pay Via Debit Card" 
+                  title='pay via Debit Card' 
                 />
-
+              </View> 
+              <View style={styles.container}> 
                 <Button style={styles.button} onPress={() => {this.creditcardReload()}}
-                  title="Pay Via Credit Card" 
-                />
-
-              <Text style={styles.contents}>{"\n"}Your amount after reloading: {this.state.balance}</Text>
-
-
-                
+                  title="Pay via Credit Card" 
+                />    
+              </View>         
             </View>  
+</View>  
+
         );  
     }  
 }  
@@ -115,9 +122,9 @@ const styles = StyleSheet.create({
  button: {
 
   height: 40, 
-  width: '70',
+  width: '90',
   marginTop: 10,
-  padding: 10
+  padding: 15
  
  }
 })
