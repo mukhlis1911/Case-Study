@@ -5,6 +5,7 @@ Members:
 2. Izzat Izzqy bin Jasme (1722563)
 3. Aiman Haziq Bin Hairi (1728083)
 4. Muhammad Mukhlis Bin Mohd Mahyudi (1727743)
+5. Nur Syamimi Binti Muzafarkamal (1722414)
 
 
 
@@ -13,6 +14,7 @@ Sabrina - Responsible in creating the unlimited slots for storage.
 Aiman - Tasked on storing balance, payment, date of peak transaction and remaining discount.
 izzat - Assigned to do the reload with cashback
 Mukhlis - Responsible in creating off peak hour discount.
+syamimi - In charge of ensuring the balance is reflected after every transaction.
 
 
 Description code
