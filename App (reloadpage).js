@@ -19,8 +19,8 @@ export default class App extends Component {
     debitReload()
     {
 
-      var amount=parseInt(this.state.text);
-      var bal=parseInt(this.state.balance);
+      var amount=parseInt(this.state.text); //predefine function to convert the input to int/number
+      var bal=parseInt(this.state.balance); //predefine function to convert the input to int/number
       var total_after_debit = (amount + bal);
       this.setState({
 
@@ -34,8 +34,8 @@ export default class App extends Component {
     creditcardReload()
     {
 
-      var amount=parseInt(this.state.text);
-      var bal=parseInt(this.state.balance);
+      var amount=parseInt(this.state.text); //predefine function to convert the input to int/number
+      var bal=parseInt(this.state.balance); //predefine function to convert the input to int/number
       var total_after_credit = amount + bal + 0.5; //cashback 50 cents
 
       this.setState({
@@ -69,7 +69,7 @@ export default class App extends Component {
                   placeholder="Enter amount: "  
                   onChangeText={text => this.setState({text})}
               />
-            <View style={{flexDirection: "row"}}>
+            <View style={{flexDirection: "row"}}> // used flexDirection changed to row to make the button next to each other
               <View style={styles.button}> 
                 <Button style={styles.button} onPress={() => {this.debitReload()}}
                   title='pay via Debit Card' 
