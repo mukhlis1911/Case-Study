@@ -1,7 +1,7 @@
 import { Alert } from "react-native"
  
 transaction = () => {
-   this.setState {balance: Number((
+   this.setState; {balance: Number((
       this,state.balance-price
    ))} () => {
       if(this.state.balance < price){
