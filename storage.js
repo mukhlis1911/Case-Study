@@ -1,3 +1,6 @@
+//NUR SABRINA BINTI NOR AZHAR (1727772)
+//AIMAN HAZIQ BIN HAIRI (1728083)
+
 import React, { Component } from 'react';
  
 import { StyleSheet, Text, View, Alert } from 'react-native';
