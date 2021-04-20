@@ -10,15 +10,15 @@ export default class App extends Component<{}> {
  
   }
  
- render() {
+ render() { //Using array to store unlimited data
  
-  var name = [ " " ]
-  var store_balance = [ " " ];
-  var payment = [ " " ];
-  var transactionDate = [ " " ];
-  var remainingAmount = [ " " ];
+  var name = [ " " ] //The data that stores the each name of users
+  var store_balance = [ " " ]; //The data that stores the amount of the balance that is always reflected for each transaction
+  var payment = [ " " ]; //The data that stores the type of payment that is selected by user for each transaction
+  var transactionDate = [ " " ]; //The data that stores the date of transaction that is made by user
+  var remainingAmount = [ " " ]; //The data that stores the remaining amount of monthly transaction that is calculated and produces by the end of each month
  
-   return (
+   return ( //User can view the data that is stored
      <View style={styles.MainContainer}>
 
           { name.map((item, key)=>(
@@ -45,7 +45,7 @@ export default class App extends Component<{}> {
    );
  }
 }
- 
+//CSS part
 const styles = StyleSheet.create({
  
  MainContainer: {
