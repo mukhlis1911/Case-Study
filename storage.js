@@ -13,7 +13,7 @@ export default class App extends Component<{}> {
  
   }
  
- render() { //Using array to store unlimited data
+ render() { //Using array to store unlimited data. Every variable is design to have empty space, this is because it will automatically receives the data from users and fill up the storage.
  
   var name = [ " " ] //The data that stores the each name of users
   var store_balance = [ " " ]; //The data that stores the amount of the balance that is always reflected for each transaction
