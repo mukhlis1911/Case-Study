@@ -13,11 +13,11 @@ export default class App extends Component<{}> {
  
  render() {
  
-  var name = [ " Ali, Abu, Ahmad"]
-  var store_balance = [ " RM87, RM78, RM 80 " ];
-  var payment = [ " RM10, RM5, RM7" ];
-  var transactionDate = [ " 24/01/2021, 24/02/2021, 29/09/2021" ];
-  var remainingAmount = [ " RM10, RM9, RM9" ];
+  var name = [ " " ]
+  var store_balance = [ " " ];
+  var payment = [ " " ];
+  var transactionDate = [ " " ];
+  var remainingAmount = [ " " ];
  
    return (
      <View style={styles.MainContainer}>
