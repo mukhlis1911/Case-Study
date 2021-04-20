@@ -2,7 +2,7 @@
 
 Members:
 1. Nur Sabrina Binti Nor Azhar (1727772)
-2. Izzat Izzqy bin Jasme (1722563)
+2. Izzat Izzqy Bin Jasme (1722563)
 3. Aiman Haziq Bin Hairi (1728083)
 4. Muhammad Mukhlis Bin Mohd Mahyudi (1727743)
 5. Nur Syamimi Binti Muzafarkamal (1722414)
@@ -19,7 +19,7 @@ syamimi - In charge of ensuring the balance is reflected after every transaction
 
 Description code
 App.js (Reload): Reload page where user can choose which method of payment, they will earn cashback of 0.50 cents for every succesfull credit card reload.
-Reload.js (Storage): A page that carries the function that store and show the balance, payment, date of transaction and remaining number.
+storage.js: A page that carries the array function that store all the unlimited data. The required variables are also created in here such as the name, balance, payment, date of transaction and remaining number.
 
 
 
