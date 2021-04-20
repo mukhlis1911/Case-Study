@@ -17,9 +17,9 @@ Division of work:
 5. Syamimi - In charge of ensuring the balance is reflected after every transaction.
 
 
-Description code
-App.js (Reload): Reload page where user can choose which method of payment, they will earn cashback of 0.50 cents for every succesfull credit card reload.
-storage.js: A page that carries the array function that store all the unlimited data. The required variables are also created in here such as the name, balance, payment, date of transaction and remaining number.
+Description code:
+1. App.js (Reload): Reload page where user can choose which method of payment, they will earn cashback of 0.50 cents for every succesfull credit card reload.
+2. storage.js: A page that carries the array function that store all the unlimited data in the mobile application development. The required variables are also created in here such as the name, balance, payment, date of transaction and remaining number.
 
 
 
