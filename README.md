@@ -12,7 +12,7 @@ Members:
 Division of work:
 Sabrina - Responsible in creating the unlimited slots for storage. 
 Aiman - Tasked on storing balance, payment, date of peak transaction and remaining discount.
-izzat - Assigned to do the reload with cashback
+Izzat - Assigned to do the reload with cashback
 Mukhlis - Responsible in creating off peak hour discount.
 syamimi - In charge of ensuring the balance is reflected after every transaction.
 
