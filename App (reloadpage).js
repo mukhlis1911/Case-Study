@@ -43,7 +43,7 @@ export default class App extends Component {
           balance: total_after_credit
 
           });
-      alert('Your Debit Card is charged and you are good to go! \n Congratulation, you just got cashback value of RM0.50!');
+      alert('Your Credit Card is charged and you are good to go! \n Congratulation, you just got cashback value of RM0.50!');
     }
 
 
