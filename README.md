@@ -12,14 +12,17 @@ Members:
 Division of work:
 1. Sabrina - Responsible in creating the unlimited slots for storage. 
 2. Aiman - Tasked on storing balance, payment, date of peak transaction and remaining discount.
-3. Izzat - Assigned to do the reload with cashback
-4. Mukhlis - Responsible in creating off peak hour discount.
-5. Syamimi - In charge of ensuring the balance is reflected after every transaction.
+3. Mukhlis - Responsible in creating off peak hour discount.
+4.  Syamimi - In charge of ensuring the balance is reflected after every transaction.
+5.  Izzat - Assigned to do the reload with cashback
+
 
 
 Description code:
 1. App.js (Reload): Reload page where user can choose which method of payment, they will earn cashback of 0.50 cents for every succesfull credit card reload.
 2. storage.js: A page that carries the array function that store all the unlimited data in the mobile application development. The required variables are also created in here such as the name, balance, payment, date of transaction and remaining number.
+3. countDiscount.js: A function where it will give a discount to the users who use the application during peak hours. 10% discount will be given and the balance will be updated.
+4. 
 
 
 
